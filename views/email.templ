@@ -1,0 +1,23 @@
+package views
+
+templ Email(to, group, assignee string) {
+	<html>
+		<body>
+			<title>Gosanta</title>
+			<p>
+				Hello { to }!
+			</p>
+			<p>
+				Thank you for participating in the {  group } Secret Santa pool.
+				Please get a nice gift for:
+			</p>
+			<label>{  assignee }</label>
+			<p>
+				Best regards and merry christmas!!!
+			</p>
+		</body>
+	</html>
+}
+
+css body() {
+}

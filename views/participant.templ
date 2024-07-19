@@ -1,0 +1,30 @@
+package views
+
+import "github.com/gkits/gosanta/internal/santa"
+
+templ Participant(name, email string) {
+	<tr>
+		<td>
+			{ name }
+		</td>
+		<td>
+			{ email }
+		</td>
+	</tr>
+}
+
+templ Participants(pool santa.Pool) {
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			for _, part := range pool.Participants {
+				Participant()
+			}
+		</tbody>
+	</table>
+}
