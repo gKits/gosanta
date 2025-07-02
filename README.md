@@ -4,6 +4,6 @@
   </a>
   <h1 align="center">GoSanta</h1>
   <p align="center">
-    A hackable alarm clock using TinyGo.
+    Plan your next game of Secret Santa from the comfort of you terminal.
   </p>
 </div>
